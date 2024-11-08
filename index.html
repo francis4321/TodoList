@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top"></div>
+        <div class="todo-container">
+            <div class="heading">
+                <div class="app-name">
+                    <p>TODO</p>
+                </div>
+                <div class="mode-icon">
+                    <img src="./icons/moon.png" id="moon" class="active" alt="">
+                    <img src="./icons/sun.png" id="sun" alt="">
+                </div>
+            </div>
+
+            <div class="input-task-box">
+                <button id="add-task"></button>
+                <input type="text" id="input-task" placeholder="Create a new todo…">
+            </div>
+
+            <div class="task-container">
+                <ul class="list-items" id="list_items">
+                    
+                </ul>
+
+                <div class="menu-section">
+                    <div>
+                        <p id="count"><span id="counter">0</span> items left</p>
+                    </div>
+
+                    <div class="task-state">
+                        <p id="all" class="active">All</p>
+                        <p id="active">Active</p>
+                        <p id="completed">Completed</p>
+                    </div>
+
+                    <div>
+                        <p id="clear-completed">Clear Completed</p>
+                    </div>
+                </div> 
+            </div>
+
+            <!-- <div class="bottom-info">
+                <p>Drag and drop to reorder list</p>
+            </div> -->
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
